@@ -10,36 +10,57 @@ const messages = [
 
 "✨ You are magic in my life ❤️",
 
-"❤️ KANBGHIIIIIIIIIIIK ❤️"
+"❤️ My heart belongs to you ❤️",
+
+"💞 Every moment with you is special ❤️",
+
+"🥰 KANBGHIIIIIIIIIIIK ❤️"
 
 ];
 
+let opened = 0;
+
+function showWays(){
+
+    document.getElementById("intro").classList.add("hidden");
+
+    document.getElementById("ways").classList.remove("hidden");
+}
+
+function showWay1(){
+
+    document.getElementById("ways").classList.add("hidden");
+
+    document.getElementById("way1").classList.remove("hidden");
+}
+
 function openLetter(index){
 
-    const messageBox = document.getElementById("messageBox");
+    const box = document.getElementById("messageBox");
 
-    messageBox.innerHTML = messages[index];
+    box.innerHTML = messages[index];
 
-    if(index === 5){
+    box.style.animation = "none";
 
-        document.getElementById("way2Btn").style.display = "inline-block";
+    setTimeout(() => {
 
+        box.style.animation = "fade 1s";
+
+    },10);
+
+    opened++;
+
+    if(opened >= 8){
+
+        document.getElementById("nextBtn").style.display = "block";
     }
 }
 
-function showHeart(){
+function showWay2(){
 
-    document.body.innerHTML = `
+    document.getElementById("ways").classList.add("hidden");
 
-    <div class="heart-container">
+    document.getElementById("way1").classList.add("hidden");
 
-        <div class="heart"></div>
-
-        <h1 class="love-text">
-            KANBGHIIIIIIIIIIIK ❤️
-        </h1>
-
-    </div>
-
-    `;
+    document.getElementById("way2").classList.remove("hidden");
 }
