@@ -1,73 +1,45 @@
 const messages = [
 
-"🌹 You are the most beautiful thing my heart has ever known.",
+"💌 You are my favorite person ❤️",
 
-"💖 Every moment with you feels magical and unforgettable.",
+"💖 Every heartbeat whispers your name ❤️",
 
-"✨ Your smile is brighter than all the stars in the sky.",
+"🌹 You make my world beautiful ❤️",
 
-"💕 Loving you is the best feeling in my whole life.",
+"💕 I love your smile sooo much ❤️",
 
-"❤️ Happy Birthday to the person who makes my world beautiful.",
+"✨ You are magic in my life ❤️",
 
-"🌸 If love had a face, it would look exactly like you."
+"❤️ KANBGHIIIIIIIIIIIK ❤️"
 
 ];
 
-/* START */
-function showChoices(){
+function openLetter(index){
 
-    document.getElementById("startScreen")
-    .style.display = "none";
+    const messageBox = document.getElementById("messageBox");
 
-    document.getElementById("choices")
-    .style.display = "block";
+    messageBox.innerHTML = messages[index];
 
+    if(index === 5){
+
+        document.getElementById("way2Btn").style.display = "inline-block";
+
+    }
 }
 
-/* WAY 1 */
-function showWay1(){
+function showHeart(){
 
-    document.getElementById("choices")
-    .style.display = "none";
+    document.body.innerHTML = `
 
-    document.getElementById("lettersContainer")
-    .style.display = "flex";
+    <div class="heart-container">
 
-}
+        <div class="heart"></div>
 
-/* OPEN MESSAGE */
-function openMessage(index){
+        <h1 class="love-text">
+            KANBGHIIIIIIIIIIIK ❤️
+        </h1>
 
-    document.getElementById("messagePopup")
-    .style.display = "flex";
+    </div>
 
-    document.getElementById("messageText")
-    .innerHTML = messages[index];
-
-}
-
-/* CLOSE */
-function closePopup(){
-
-    document.getElementById("messagePopup")
-    .style.display = "none";
-
-}
-
-/* WAY 2 */
-function showWay2(){
-
-    const popup = document.getElementById("popup");
-
-    popup.style.display = "flex";
-
-    popup.innerHTML = `
-        <div class="heart-container">
-            <div class="heart"></div>
-            <h1 class="love-text">
-                KANBGHIIIIIIIIIIIK ❤️
-            </h1>
-        </div>
     `;
 }
