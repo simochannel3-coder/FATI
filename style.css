@@ -2,8 +2,15 @@ body{
     margin:0;
     padding:0;
     font-family:Arial;
-    background:#f7a8be;
     overflow-x:hidden;
+
+    background-image:url('https://i.pinimg.com/736x/f2/8f/1f/f28f1f86b13d57d11c74d9f4d6e8d9a5.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
 }
 
 /* INTRO */
@@ -14,12 +21,16 @@ body{
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    backdrop-filter:blur(2px);
 }
 
 .birthday-text{
     color:white;
-    font-size:70px;
+    font-size:75px;
+    text-shadow:0 0 20px #ff006a;
     animation:fadeDown 2s;
+    font-family:cursive;
+    text-align:center;
 }
 
 .main-heart{
@@ -60,6 +71,11 @@ body{
     color:#ff4081;
     font-size:22px;
     cursor:pointer;
+    transition:0.4s;
+}
+
+.start-btn:hover{
+    transform:scale(1.1);
 }
 
 /* WAYS */
@@ -72,6 +88,12 @@ body{
     flex-direction:column;
 }
 
+.choose-title{
+    color:white;
+    font-size:60px;
+    text-shadow:0 0 20px #ff006a;
+}
+
 .buttons button{
     padding:18px 35px;
     margin:20px;
@@ -81,6 +103,11 @@ body{
     color:white;
     font-size:25px;
     cursor:pointer;
+    transition:0.4s;
+}
+
+.buttons button:hover{
+    transform:scale(1.1);
 }
 
 /* WAY 1 */
@@ -90,6 +117,7 @@ body{
     margin-top:40px;
     color:white;
     font-size:50px;
+    text-shadow:0 0 15px #ff006a;
 }
 
 .letters-container{
@@ -124,6 +152,7 @@ body{
     font-size:35px;
     min-height:70px;
     animation:fade 1s;
+    text-shadow:0 0 10px black;
 }
 
 .next-btn{
