@@ -10,49 +10,83 @@
 
 <body>
 
-  <div class="container">
+  <!-- FIRST ANIMATION -->
 
-    <h1 class="title">
-      Happy Birthday ❤️
-    </h1>
+  <div id="intro" class="intro">
 
-    <p class="subtitle">
-      Choose your surprise 💌
-    </p>
+      <h1 class="birthday-text">
+        Happy Birthday ❤️
+      </h1>
 
-    <div class="letters-container">
+      <div class="main-heart"></div>
 
-      <div class="letter" onclick="openLetter(0)">
-        💌
+      <button class="start-btn" onclick="showWays()">
+        Open Surprise 💌
+      </button>
+
+  </div>
+
+
+  <!-- WAYS -->
+
+  <div id="ways" class="ways hidden">
+
+      <h1>Choose Your Way ❤️</h1>
+
+      <div class="buttons">
+
+          <button onclick="showWay1()">
+            Way 1 💌
+          </button>
+
+          <button onclick="showWay2()">
+            Way 2 ❤️
+          </button>
+
       </div>
 
-      <div class="letter" onclick="openLetter(1)">
-        💖
+  </div>
+
+
+  <!-- WAY 1 -->
+
+  <div id="way1" class="hidden">
+
+      <h1 class="way-title">
+        Open The Letters ❤️
+      </h1>
+
+      <div class="letters-container">
+
+          <div class="letter" onclick="openLetter(0)">💌</div>
+          <div class="letter" onclick="openLetter(1)">💖</div>
+          <div class="letter" onclick="openLetter(2)">🌹</div>
+          <div class="letter" onclick="openLetter(3)">💕</div>
+          <div class="letter" onclick="openLetter(4)">✨</div>
+          <div class="letter" onclick="openLetter(5)">❤️</div>
+          <div class="letter" onclick="openLetter(6)">💞</div>
+          <div class="letter" onclick="openLetter(7)">🥰</div>
+
       </div>
 
-      <div class="letter" onclick="openLetter(2)">
-        🌹
-      </div>
+      <div id="messageBox" class="message-box"></div>
 
-      <div class="letter" onclick="openLetter(3)">
-        💕
-      </div>
+      <button id="nextBtn" class="next-btn" onclick="showWay2()">
+        Continue To Way 2 ❤️
+      </button>
 
-      <div class="letter" onclick="openLetter(4)">
-        ✨
-      </div>
+  </div>
 
-      <div class="letter" onclick="openLetter(5)">
-        ❤️
-      </div>
 
-    </div>
+  <!-- WAY 2 -->
 
-    <div id="messageBox" class="message-box"></div>
+  <div id="way2" class="hidden heart-page">
 
-    <button id="way2Btn" class="way2-btn" onclick="showHeart()">
-      Go To Way 2 ❤️
-    </button>
+      <div class="big-heart"></div>
+
+      <h1 class="love-text">
+        KANBGHIIIIIIIIIIIK ❤️
+      </h1>
 
   </div>
 
