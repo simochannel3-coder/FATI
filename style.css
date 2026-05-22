@@ -1,27 +1,95 @@
 body{
     margin:0;
     padding:0;
-    background:#f7a9bc;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
+    background:#f7a8be;
     overflow-x:hidden;
 }
 
-.container{
-    text-align:center;
-    margin-top:60px;
+/* INTRO */
+
+.intro{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 }
 
-.title{
-    font-size:60px;
+.birthday-text{
     color:white;
+    font-size:70px;
     animation:fadeDown 2s;
 }
 
-.subtitle{
-    font-size:24px;
+.main-heart{
+    width:180px;
+    height:180px;
+    background:red;
+    position:relative;
+    transform:rotate(-45deg);
+    animation:pulse 1.5s infinite;
+    margin:50px;
+}
+
+.main-heart::before,
+.main-heart::after{
+    content:'';
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:red;
+    border-radius:50%;
+}
+
+.main-heart::before{
+    top:-90px;
+    left:0;
+}
+
+.main-heart::after{
+    left:90px;
+    top:0;
+}
+
+.start-btn{
+    padding:18px 35px;
+    border:none;
+    border-radius:15px;
+    background:white;
+    color:#ff4081;
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* WAYS */
+
+.ways{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.buttons button{
+    padding:18px 35px;
+    margin:20px;
+    border:none;
+    border-radius:15px;
+    background:red;
     color:white;
-    margin-bottom:40px;
-    animation:fadeDown 3s;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* WAY 1 */
+
+.way-title{
+    text-align:center;
+    margin-top:40px;
+    color:white;
+    font-size:50px;
 }
 
 .letters-container{
@@ -29,7 +97,7 @@ body{
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
-    animation:fadeUp 2s;
+    margin-top:60px;
 }
 
 .letter{
@@ -46,30 +114,33 @@ body{
 }
 
 .letter:hover{
-    transform:scale(1.1) rotate(5deg);
+    transform:scale(1.1) rotate(8deg);
 }
 
 .message-box{
-    margin-top:40px;
-    font-size:30px;
+    margin-top:50px;
+    text-align:center;
     color:white;
-    min-height:60px;
+    font-size:35px;
+    min-height:70px;
     animation:fade 1s;
 }
 
-.way2-btn{
-    margin-top:30px;
-    padding:15px 35px;
+.next-btn{
+    display:none;
+    margin:40px auto;
+    padding:18px 35px;
     border:none;
     border-radius:15px;
     background:red;
     color:white;
-    font-size:24px;
+    font-size:25px;
     cursor:pointer;
-    display:none;
 }
 
-.heart-container{
+/* WAY 2 */
+
+.heart-page{
     height:100vh;
     background:black;
     display:flex;
@@ -78,45 +149,61 @@ body{
     flex-direction:column;
 }
 
-.heart{
-    position:relative;
-    width:220px;
-    height:220px;
+.big-heart{
+    width:240px;
+    height:240px;
     background:red;
+    position:relative;
     transform:rotate(-45deg) scale(0);
-    animation:heartAnimation 2s forwards;
+    animation:heartAppear 2s forwards;
 }
 
-.heart::before,
-.heart::after{
+.big-heart::before,
+.big-heart::after{
     content:'';
     position:absolute;
-    width:220px;
-    height:220px;
+    width:240px;
+    height:240px;
     background:red;
     border-radius:50%;
 }
 
-.heart::before{
-    top:-110px;
+.big-heart::before{
+    top:-120px;
     left:0;
 }
 
-.heart::after{
-    left:110px;
+.big-heart::after{
+    left:120px;
     top:0;
 }
 
 .love-text{
     color:white;
-    font-size:45px;
-    margin-top:50px;
+    font-size:50px;
+    margin-top:60px;
     opacity:0;
     animation:textAppear 3s forwards;
     animation-delay:2s;
 }
 
-@keyframes heartAnimation{
+/* ANIMATIONS */
+
+@keyframes pulse{
+    0%{
+        transform:rotate(-45deg) scale(1);
+    }
+
+    50%{
+        transform:rotate(-45deg) scale(1.1);
+    }
+
+    100%{
+        transform:rotate(-45deg) scale(1);
+    }
+}
+
+@keyframes heartAppear{
     from{
         transform:rotate(-45deg) scale(0);
     }
@@ -129,31 +216,7 @@ body{
 @keyframes textAppear{
     from{
         opacity:0;
-        transform:translateY(20px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes fadeDown{
-    from{
-        opacity:0;
-        transform:translateY(-50px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(50px);
+        transform:translateY(30px);
     }
 
     to{
@@ -170,4 +233,20 @@ body{
     to{
         opacity:1;
     }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hidden{
+    display:none;
 }
