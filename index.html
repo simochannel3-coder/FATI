@@ -1,91 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday ❤️</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
 
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="bg"></div>
-<div class="overlay"></div>
+<div class="container">
 
-<div class="title">
-    <h1>Happy Birthday ❤️</h1>
-    <p>Choose your surprise 💌</p>
-</div>
+  <h1>Happy Birthday ❤️</h1>
 
-<div class="buttons" id="buttons">
-    <button onclick="startWay1()">Way 1 💌</button>
-    <button onclick="showWay2()">Way 2 ❤️</button>
-</div>
+  <p>Choose your surprise 💌</p>
 
-<div class="container" id="lettersContainer">
+  <button id="way2">Way 2 ❤️</button>
 
-    <div class="envelope" onclick="openLetter(this,0)">
-        <div class="bodyLetter"></div>
-        <div class="inside">💖 Open Me</div>
-    </div>
-
-    <div class="envelope" onclick="openLetter(this,1)">
-        <div class="bodyLetter"></div>
-        <div class="inside">🌹 For You</div>
-    </div>
-
-    <div class="envelope" onclick="openLetter(this,2)">
-        <div class="bodyLetter"></div>
-        <div class="inside">💕 Baby</div>
-    </div>
-
-    <div class="envelope" onclick="openLetter(this,3)">
-        <div class="bodyLetter"></div>
-        <div class="inside">✨ Love</div>
-    </div>
-
-    <div class="envelope" onclick="openLetter(this,4)">
-        <div class="bodyLetter"></div>
-        <div class="inside">❤️ Smile</div>
-    </div>
-
-    <div class="envelope" onclick="openLetter(this,5)">
-        <div class="bodyLetter"></div>
-        <div class="inside">🌸 Click</div>
-    </div>
-
-</div>
-
-<div class="nextWay" id="nextWay">
-    <button onclick="showWay2()">
-        Continue To Way 2 ❤️
-    </button>
-</div>
-
-<div class="way2" id="way2">
-
-    <div class="bigMessage">
-        You Are My Favorite Person ❤️
-    </div>
-
-    <div class="smallText">
-        Every heartbeat of mine whispers your name.
-        Happy Birthday to the most beautiful soul in my life 💖
-    </div>
-
-</div>
-
-<div class="popup" id="popup">
-
-    <h2>My Love ❤️</h2>
-
-    <p id="popupText"></p>
-
-    <button class="closeBtn" onclick="closePopup()">
-        Close 💌
-    </button>
+  <div id="popup"></div>
 
 </div>
 
