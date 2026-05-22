@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-  <h1>Happy Birthday ❤️</h1>
+    <h1>Happy Birthday ❤️</h1>
 
-  <p>Choose your surprise 💌</p>
+    <p>Choose your surprise 💌</p>
 
-  <button id="way2">Way 2 ❤️</button>
+    <div class="buttons">
 
-  <div id="popup"></div>
+        <button onclick="showWay1()">
+            Way 1 💌
+        </button>
+
+        <button id="way2">
+            Way 2 ❤️
+        </button>
+
+    </div>
+
+    <div id="way1Content" style="display:none; margin-top:40px;">
+
+        <h2 style="color:white;">
+            💌 Romantic Letters 💌
+        </h2>
+
+    </div>
 
 </div>
+
+<div id="popup"></div>
 
 <script src="script.js"></script>
 
