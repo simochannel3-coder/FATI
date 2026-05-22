@@ -11,11 +11,27 @@
 
 <body>
 
-<div class="container">
+<!-- START SCREEN -->
+<div class="start-screen" id="startScreen">
 
-    <h1>Happy Birthday ❤️</h1>
+    <h1 class="birthday-title">
+        Happy Birthday ❤️
+    </h1>
 
-    <p>Choose your surprise 💌</p>
+    <p class="subtitle">
+        A special surprise for you 💌
+    </p>
+
+    <button class="start-btn" onclick="showChoices()">
+        Open Surprise 🎁
+    </button>
+
+</div>
+
+<!-- WAYS -->
+<div class="choices" id="choices">
+
+    <h2>Choose Your Way 💖</h2>
 
     <div class="buttons">
 
@@ -23,22 +39,61 @@
             Way 1 💌
         </button>
 
-        <button id="way2">
+        <button onclick="showWay2()">
             Way 2 ❤️
         </button>
 
     </div>
 
-    <div id="way1Content" style="display:none; margin-top:40px;">
+</div>
 
-        <h2 style="color:white;">
-            💌 Romantic Letters 💌
-        </h2>
+<!-- WAY 1 -->
+<div class="letters-container" id="lettersContainer">
+
+    <div class="envelope" onclick="openMessage(0)">
+        💌
+    </div>
+
+    <div class="envelope" onclick="openMessage(1)">
+        💖
+    </div>
+
+    <div class="envelope" onclick="openMessage(2)">
+        🌹
+    </div>
+
+    <div class="envelope" onclick="openMessage(3)">
+        💕
+    </div>
+
+    <div class="envelope" onclick="openMessage(4)">
+        ✨
+    </div>
+
+    <div class="envelope" onclick="openMessage(5)">
+        ❤️
+    </div>
+
+</div>
+
+<!-- MESSAGE POPUP -->
+<div class="message-popup" id="messagePopup">
+
+    <div class="message-box">
+
+        <h2>My Love ❤️</h2>
+
+        <p id="messageText"></p>
+
+        <button onclick="closePopup()">
+            Close 💌
+        </button>
 
     </div>
 
 </div>
 
+<!-- WAY 2 -->
 <div id="popup"></div>
 
 <script src="script.js"></script>
