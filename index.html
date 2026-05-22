@@ -1,102 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday ❤️</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday ❤️</title>
 
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- START SCREEN -->
-<div class="start-screen" id="startScreen">
+  <div class="container">
 
-    <h1 class="birthday-title">
-        Happy Birthday ❤️
+    <h1 class="title">
+      Happy Birthday ❤️
     </h1>
 
     <p class="subtitle">
-        A special surprise for you 💌
+      Choose your surprise 💌
     </p>
 
-    <button class="start-btn" onclick="showChoices()">
-        Open Surprise 🎁
+    <div class="letters-container">
+
+      <div class="letter" onclick="openLetter(0)">
+        💌
+      </div>
+
+      <div class="letter" onclick="openLetter(1)">
+        💖
+      </div>
+
+      <div class="letter" onclick="openLetter(2)">
+        🌹
+      </div>
+
+      <div class="letter" onclick="openLetter(3)">
+        💕
+      </div>
+
+      <div class="letter" onclick="openLetter(4)">
+        ✨
+      </div>
+
+      <div class="letter" onclick="openLetter(5)">
+        ❤️
+      </div>
+
+    </div>
+
+    <div id="messageBox" class="message-box"></div>
+
+    <button id="way2Btn" class="way2-btn" onclick="showHeart()">
+      Go To Way 2 ❤️
     </button>
 
-</div>
+  </div>
 
-<!-- WAYS -->
-<div class="choices" id="choices">
-
-    <h2>Choose Your Way 💖</h2>
-
-    <div class="buttons">
-
-        <button onclick="showWay1()">
-            Way 1 💌
-        </button>
-
-        <button onclick="showWay2()">
-            Way 2 ❤️
-        </button>
-
-    </div>
-
-</div>
-
-<!-- WAY 1 -->
-<div class="letters-container" id="lettersContainer">
-
-    <div class="envelope" onclick="openMessage(0)">
-        💌
-    </div>
-
-    <div class="envelope" onclick="openMessage(1)">
-        💖
-    </div>
-
-    <div class="envelope" onclick="openMessage(2)">
-        🌹
-    </div>
-
-    <div class="envelope" onclick="openMessage(3)">
-        💕
-    </div>
-
-    <div class="envelope" onclick="openMessage(4)">
-        ✨
-    </div>
-
-    <div class="envelope" onclick="openMessage(5)">
-        ❤️
-    </div>
-
-</div>
-
-<!-- MESSAGE POPUP -->
-<div class="message-popup" id="messagePopup">
-
-    <div class="message-box">
-
-        <h2>My Love ❤️</h2>
-
-        <p id="messageText"></p>
-
-        <button onclick="closePopup()">
-            Close 💌
-        </button>
-
-    </div>
-
-</div>
-
-<!-- WAY 2 -->
-<div id="popup"></div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
