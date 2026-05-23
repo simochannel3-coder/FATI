@@ -1,6 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="intro">
+
+<h1 class="title">
+Happy Birthday 3mri ❤️
+</h1>
+
+<p class="subtitle">
+You are the most beautiful thing in my life ✨
+</p>
+
 <div class="heart">
-  <img 
-    src="https://raw.githubusercontent.com/simochannel3-coder/FATI/main/WhatsApp%20Image%202026-05-23%20at%2001.51.49.jpeg" 
-    class="heart-img"
-  >
+<img 
+src="https://raw.githubusercontent.com/simochannel3-coder/FATI/main/WhatsApp%20Image%202026-05-23%20at%2001.51.49.jpeg"
+class="heart-img">
 </div>
+
+<button class="btn" onclick="showWays()">
+Open Surprise 💌
+</button>
+
+</div>
+
+<div class="ways" id="ways">
+
+<h2>Choose Your Surprise 💖</h2>
+
+<button onclick="showWay1()">Way 1 💌</button>
+
+<button onclick="showWay2()">Way 2 ❤️</button>
+
+</div>
+
+<div id="way1" class="hidden">
+
+<h2>For You ❤️</h2>
+
+<div class="letters">
+
+<div class="letter" onclick="showMessage(0)">💌</div>
+<div class="letter" onclick="showMessage(1)">💖</div>
+<div class="letter" onclick="showMessage(2)">🌹</div>
+<div class="letter" onclick="showMessage(3)">❤️</div>
+<div class="letter" onclick="showMessage(4)">✨</div>
+<div class="letter" onclick="showMessage(5)">💘</div>
+<div class="letter" onclick="showMessage(6)">🥰</div>
+<div class="letter" onclick="showMessage(7)">💕</div>
+
+</div>
+
+<p id="message"></p>
+
+<button id="nextBtn" class="hidden" onclick="showWay2()">
+Continue To Way 2 ❤️
+</button>
+
+</div>
+
+<div id="way2" class="hidden">
+
+<div class="big-heart">
+<img 
+src="https://raw.githubusercontent.com/simochannel3-coder/FATI/main/WhatsApp%20Image%202026-05-23%20at%2001.51.49.jpeg"
+class="center-photo">
+</div>
+
+<h1 class="love-text">
+KANBGHIIIIIIIIIIIK ❤️
+</h1>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
