@@ -1,20 +1,20 @@
 const messages = [
 
-"💌 You are my favorite person ❤️",
+"💌 Habibati wahoub hayaati Had nhaar mchi bhal ay nhar hit had nhar tzad 9amar dylii  ❤️",
 
-"💖 Every heartbeat whispers your name ❤️",
+"💖 Nti hya hyati w3mri lah ykhliiiiik liyaa ❤️",
 
-"🌹 You make my world beautiful ❤️",
+"🌹 Mkntkhylch hyati bla bik ahbiba dyli kola 3am wnti b alf khiiir  ❤️",
 
-"💕 I love your smile sooo much ❤️",
+"💕 Kanmoooot 3lik kanmoot 3la ri7aa dylk dhkt,3winaaatk w ydidatk w lips dylk Kanmot 3lik kamlaa bkol haja fik  ❤️",
 
-"✨ You are magic in my life ❤️",
+"✨ Nti hyaa limzynaa liya hayati wmnwrahaa bla bik had hayaat mtswa wlo  ❤️",
 
-"❤️ My heart belongs to you ❤️",
+"❤️ Fach knchofk frhana ktrd fiya rou7 wkaywlii nhari zwiin ajml haja w93aat fhyati hya awl nhar fkrt nhdr m3aak kanhmd lah hit hdrt m3aak hit ana db aktaar wahd fhad dnyaa frhaan hit 3ndo had jamaal whad ghzalaa fhayaatoo ❤️",
 
-"💞 Every moment with you is special ❤️",
+"💞 Mkrhtch fach nkon m3ak yhbs w9t hit m3aaak kanl9aa rahti wkn3iich m3aak f3alamk li mkhlinii aktr waaaahd mrtaa7 fhad dnyaa  ❤️",
 
-"🥰 KANBGHIIIIIIIIIIIK ❤️"
+"🥰 KANBGHIIIIIIIIIIIK WKANMOOOOOOOOOOOOOOOT 3LIIIIIIK WYKHLIIIIIIIK LIIIIIIIIYA❤️"
 
 ];
 
