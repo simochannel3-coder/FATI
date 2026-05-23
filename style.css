@@ -203,3 +203,52 @@ opacity:1;
 transform:translateY(0);
 }
 }
+.heart-gallery{
+position:relative;
+width:320px;
+height:220px;
+margin:30px auto;
+}
+
+.heart-gallery img{
+position:absolute;
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:20px;
+border:4px solid white;
+box-shadow:0 0 15px hotpink;
+transition:0.4s;
+animation:float 3s infinite;
+}
+
+.heart-gallery img:hover{
+transform:scale(1.1);
+}
+
+/* HEART SHAPE */
+
+.g1{
+top:0;
+left:60px;
+}
+
+.g2{
+top:0;
+right:60px;
+}
+
+.g3{
+top:60px;
+left:20px;
+}
+
+.g4{
+top:60px;
+right:20px;
+}
+
+.g5{
+bottom:0;
+left:115px;
+}
