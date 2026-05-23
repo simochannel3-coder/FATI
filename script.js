@@ -53,7 +53,11 @@ function goHome(){
 
 document.getElementById("way1").classList.add("hidden");
 
+document.getElementById("way2").classList.add("hidden");
+
 document.getElementById("intro").classList.remove("hidden");
+
+window.scrollTo(0,0);
 
 }
 }
