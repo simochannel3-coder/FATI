@@ -49,5 +49,11 @@ if(opened >= 8){
 document.getElementById("continueBtn").classList.remove("hidden");
 
 }
+function goHome(){
 
+document.getElementById("way1").classList.add("hidden");
+
+document.getElementById("intro").classList.remove("hidden");
+
+}
 }
