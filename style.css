@@ -3,14 +3,35 @@ body{
     padding:0;
     font-family:Arial;
     overflow-x:hidden;
-
-    background-image:url('https://i.pinimg.com/736x/f2/8f/1f/f28f1f86b13d57d11c74d9f4d6e8d9a5.jpg');
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
     min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #ff9ec4,
+        #ffb6d9,
+        #ffcce5,
+        #ffd6eb
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 10s ease infinite;
+}
+
+/* FALLING HEARTS */
+
+body::before{
+    content:"❤️ 💖 💕 💞 ❤️ 💖";
+    position:fixed;
+    top:-50px;
+    left:0;
+    width:100%;
+    font-size:35px;
+    display:flex;
+    justify-content:space-around;
+    animation:heartsFall 10s linear infinite;
+    pointer-events:none;
+    z-index:999;
 }
 
 /* INTRO */
@@ -21,7 +42,6 @@ body{
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    backdrop-filter:blur(2px);
 }
 
 .birthday-text{
@@ -33,45 +53,50 @@ body{
     text-align:center;
 }
 
+/* MAIN HEART */
+
 .main-heart{
-    width:180px;
-    height:180px;
-    background:red;
     position:relative;
+    width:220px;
+    height:220px;
+    background:red;
     transform:rotate(-45deg);
     animation:pulse 1.5s infinite;
-    margin:50px;
+    margin:60px;
 }
 
 .main-heart::before,
 .main-heart::after{
     content:'';
     position:absolute;
-    width:180px;
-    height:180px;
+    width:220px;
+    height:220px;
     background:red;
     border-radius:50%;
 }
 
 .main-heart::before{
-    top:-90px;
+    top:-110px;
     left:0;
 }
 
 .main-heart::after{
-    left:90px;
+    left:110px;
     top:0;
 }
+
+/* BUTTON */
 
 .start-btn{
     padding:18px 35px;
     border:none;
-    border-radius:15px;
+    border-radius:20px;
     background:white;
     color:#ff4081;
-    font-size:22px;
+    font-size:24px;
     cursor:pointer;
     transition:0.4s;
+    box-shadow:0 0 20px rgba(255,255,255,0.7);
 }
 
 .start-btn:hover{
@@ -98,12 +123,13 @@ body{
     padding:18px 35px;
     margin:20px;
     border:none;
-    border-radius:15px;
+    border-radius:20px;
     background:red;
     color:white;
     font-size:25px;
     cursor:pointer;
     transition:0.4s;
+    box-shadow:0 0 20px rgba(255,0,90,0.5);
 }
 
 .buttons button:hover{
@@ -132,13 +158,14 @@ body{
     width:100px;
     height:100px;
     background:white;
-    border-radius:20px;
+    border-radius:25px;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:50px;
     cursor:pointer;
     transition:0.4s;
+    box-shadow:0 0 15px rgba(255,255,255,0.8);
 }
 
 .letter:hover{
@@ -160,11 +187,12 @@ body{
     margin:40px auto;
     padding:18px 35px;
     border:none;
-    border-radius:15px;
+    border-radius:20px;
     background:red;
     color:white;
     font-size:25px;
     cursor:pointer;
+    box-shadow:0 0 20px rgba(255,0,90,0.5);
 }
 
 /* WAY 2 */
@@ -179,8 +207,8 @@ body{
 }
 
 .big-heart{
-    width:240px;
-    height:240px;
+    width:260px;
+    height:260px;
     background:red;
     position:relative;
     transform:rotate(-45deg) scale(0);
@@ -191,25 +219,25 @@ body{
 .big-heart::after{
     content:'';
     position:absolute;
-    width:240px;
-    height:240px;
+    width:260px;
+    height:260px;
     background:red;
     border-radius:50%;
 }
 
 .big-heart::before{
-    top:-120px;
+    top:-130px;
     left:0;
 }
 
 .big-heart::after{
-    left:120px;
+    left:130px;
     top:0;
 }
 
 .love-text{
     color:white;
-    font-size:50px;
+    font-size:55px;
     margin-top:60px;
     opacity:0;
     animation:textAppear 3s forwards;
@@ -218,7 +246,34 @@ body{
 
 /* ANIMATIONS */
 
+@keyframes bgMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+@keyframes heartsFall{
+
+    0%{
+        transform:translateY(-100px);
+    }
+
+    100%{
+        transform:translateY(120vh);
+    }
+}
+
 @keyframes pulse{
+
     0%{
         transform:rotate(-45deg) scale(1);
     }
@@ -233,6 +288,7 @@ body{
 }
 
 @keyframes heartAppear{
+
     from{
         transform:rotate(-45deg) scale(0);
     }
@@ -243,6 +299,7 @@ body{
 }
 
 @keyframes textAppear{
+
     from{
         opacity:0;
         transform:translateY(30px);
@@ -255,6 +312,7 @@ body{
 }
 
 @keyframes fade{
+
     from{
         opacity:0;
     }
@@ -265,6 +323,7 @@ body{
 }
 
 @keyframes fadeDown{
+
     from{
         opacity:0;
         transform:translateY(-50px);
