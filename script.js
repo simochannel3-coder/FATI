@@ -60,4 +60,4 @@ document.getElementById("intro").classList.remove("hidden");
 window.scrollTo(0,0);
 
 }
-}
+
