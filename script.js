@@ -1,10 +1,10 @@
 const messages = [
 
-"💌 Habibati wahoub hayaati Had nhaar mchi bhal ay nhar hit had nhar tzad 9amar dylii ❤️",
+"💌 Habibati wahoub hayaati Had nhaar mchi bhal ay nhar hit had nhar 3id tzad 9amar dylii  ❤️",
 
 "💖 Nti hya hyati w3mri lah ykhliiiiik liyaa ❤️",
 
-"🌹 Mkntkhylch hyati bla bik ahbiba dyli kola 3am wnti b alf khiiir ❤️",
+"🌹 Mkntkhylch hyati bla bik ahbiba dyli kola 3am wnti b alf khiiir bsha wsalama bach makatmnaaay fhyaatk ❤️",
 
 "💕 Kanmoooot 3lik kanmoot 3la ri7aa dylk dhkt, 3winaaatk w ydidatk w lips dylk Kanmot 3lik kamlaa bkol haja fik ❤️",
 
